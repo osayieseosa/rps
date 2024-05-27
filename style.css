@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(45deg,rgb(36, 47, 207), blue);
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+.todo-list{
+    width: 320px;
+    height: 600px;
+    background: rgba(255,255,255,.25);
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.speaker-wrap{
+    display: grid;
+    place-items: center;
+}
+
+.speaker{
+    width: 18%;
+    height: 5px;
+    background: black;
+    border-radius: 15px;
+}
+
+.game-play{
+    display: grid;
+    place-content: center;
+    height: 300px;
+    gap: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+#result{
+    height: 100px;
+    display: grid;
+    place-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+
+img{
+    width: 100px;
+}
+
+.icons{
+    margin: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.active{
+    margin-top: 40px;
+}
+
+.icons img{
+    width: 50px;
+}
+
+span{
+    background: #00000048;
+    height: max-content;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+span:hover{
+    transform: scale(1.07);
+    transition: .2s ease-in-out;
+}
+
+.animate{
+    animation: shake .3s linear 3;
+}
+
+@keyframes shake {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}

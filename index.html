@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo-list">
+        <div class="speaker-wrap">
+        <div class="speaker"></div>
+    </div>
+        <div id="result">YOU WIN!</div>
+        <div class="game">
+            <div class="game-play">
+            <div class="computer" >
+                <img src="rock.png" id="computer" />
+            </div>
+            <h1>VS</h1>
+            <div class="user">
+                <img src="rock.png" id="user"/>
+            </div>
+        </div>
+            <div class="icons">
+                <span onclick="rock()">
+                    <img src="rock.png">
+                </span>
+                <span class="active" onclick="paper()">
+                    <img src="paper.png">
+                </span>
+                <span onclick="scissors()">
+                    <img src="scissors.png">
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
